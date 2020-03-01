@@ -1,11 +1,7 @@
 body {
     font-family: "Cinzel Decorative";
     overflow: auto;
-    background-image: url(img/haikei.png);
-    background-size: cover;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #FdFdFd;
   }
   
   li {
@@ -14,8 +10,8 @@ body {
   
   .header {
     background-color: #2f8380;
-    color: #fff;
-    height: 90px;
+    color: #ffffff;
+    height: 70px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -30,13 +26,21 @@ body {
   
   .header-list li {
     float: right;
-    padding: 33px 20px;
+    padding: 22px 20px;
   }
   
   .main {
-    padding: 100px 80px;
+    padding: 10px 10px;
   }
   
+  .copy-container{
+    background-image: url(img/top.png);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    padding: 220px 0px;
+  }
+
   .copy-container h1 {
     font-size: 100px;
     text-align: center;
@@ -54,18 +58,74 @@ body {
   
   .contents {
     margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 450px;
+    margin-right: 450px;
+    text-align: center;
   }
   
   .section-title {
     border-bottom: 2px solid #dee7ec;
     font-size: 28px;
+    text-align: center;
     padding-bottom: 15px;
     padding-top: 90px;
     margin-bottom: 50px;
   }
   
+  .profile-icon{
+      width: 20%;
+      float: left;
+      margin-left: 100px;
+      box-sizing: border-box;
+  }
+
+  .icon-large {
+    width: 300px;
+    border-radius: 50%;
+}
+
+
+  .profile{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 100px;
+  }
+
+  table {
+    display: table;
+    margin-left: 150px;
+
+}
+
+    table th{
+        text-align: left;
+        display: table-cell;
+        font-weight: bold;
+    }
+
+    table td{
+        text-align: left;
+        padding-left: 70px;
+        display: table-cell;
+    }
+
+
+    .sentence{
+        display: table;
+        margin-top: 100px;
+        text-align: left;
+    }
+
+  .works, .skills{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+
   .contents-item {
-    float: left;
+    text-align: center;
     margin-right: 40px;
   }
   
@@ -113,19 +173,14 @@ body {
   .footer-list li {
     padding-bottom: 20px;
   }
-  .clearfix:after, 
-  .header:after, 
-  .header-list li:after{
-      content: "";
-      display: block;
-      clear: both;
+
   }
 
   a:link{
-      color:#71a9d6;
+      color:#a9ffff;
 
   }
 
   a:visited{
-      color:#c57878;
+      color:#ffd3ff;
   }
