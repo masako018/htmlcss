@@ -1,5 +1,5 @@
 body {
-    font-family: "Avenir Next";
+    font-family: "Cinzel Decorative";
     overflow: auto;
     background-image: url(img/haikei.png);
     background-size: cover;
@@ -24,12 +24,12 @@ body {
   
   .header-logo {
     float: left;
-    font-size: 36px;
+    font-size: 28px;
     padding: 20px 40px;
   }
   
   .header-list li {
-    float: left;
+    float: right;
     padding: 33px 20px;
   }
   
@@ -38,15 +38,18 @@ body {
   }
   
   .copy-container h1 {
-    font-size: 140px;
+    font-size: 100px;
+    text-align: center;
   }
   
   .copy-container h2 {
     font-size: 60px;
+    text-align: center;
   }
   
   .copy-container span {
     color: #ff4a4a;
+    font-size: 80px;
   }
   
   .contents {
