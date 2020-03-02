@@ -1,7 +1,8 @@
 body {
-    font-family: "Cinzel Decorative";
+    font-family: 'Noto Sans JP', ;
     overflow: auto;
     background-color: #FdFdFd;
+    margin: 0px;
   }
   
   li {
@@ -30,7 +31,8 @@ body {
   }
   
   .main {
-    padding: 10px 10px;
+    display: block;
+    margin: 0px;
   }
   
   .copy-container{
@@ -59,34 +61,55 @@ body {
   .contents {
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 450px;
-    margin-right: 450px;
     text-align: center;
   }
   
   .section-title {
-    border-bottom: 2px solid #dee7ec;
     font-size: 28px;
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     padding-top: 90px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
   
-  .profile-icon{
-      width: 20%;
-      float: left;
-      margin-left: 100px;
-      box-sizing: border-box;
+  .line-gray{
+    height: 1px;
+    width: 300px;
+    margin: 10px auto;
+    background-color: #2f5167;
+
   }
 
-  .icon-large {
+  .line-white{
+    height: 1px;
     width: 300px;
+    margin: 10px auto;
+    background-color: #ffffff;
+
+  }
+
+  .two-column-contents{
+    width: 700px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+    vertical-align: baseline;
+  }
+
+  .profile-icon{
+      width: 33%;
+  }
+
+  #icon{
     border-radius: 50%;
-}
+    width: 300px;
+    height: 300px;
+  }
 
-
-  .profile{
+  .profile-sentences{
       display: flex;
       justify-content: center;
       margin-bottom: 100px;
@@ -94,14 +117,12 @@ body {
 
   table {
     display: table;
-    margin-left: 150px;
 
 }
 
     table th{
         text-align: left;
         display: table-cell;
-        font-weight: bold;
     }
 
     table td{
@@ -111,10 +132,7 @@ body {
     }
 
 
-    .sentence{
-        display: table;
-        margin-top: 100px;
-        text-align: left;
+
     }
 
   .works, .skills{
@@ -157,24 +175,28 @@ body {
   .footer {
     background-color: #2f5167;
     color: #fff;
-    height: 120px;
-    padding: 40px;
+    height: 300px;
+    width: 100%;
+
   }
   
   .footer-logo {
-    float: left;
+    text-align: center;
     font-size: 32px;
+    padding: 20px 40px 10px 40px;
   }
   
-  .footer-list {
-    float: right;
-  }
-  
-  .footer-list li {
-    padding-bottom: 20px;
+  .two-column-footer{
+    width: 700px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+    vertical-align: baseline;
   }
 
-  }
 
   a:link{
       color:#a9ffff;
