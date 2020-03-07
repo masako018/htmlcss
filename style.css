@@ -1,30 +1,35 @@
 body {
     font-family: 'Noto Serif JP';
     overflow: auto;
-    background-color: #FdFdFd;
+    background-color: #ffffff;
     margin: 0px;
   }
-  
+
   li {
     list-style: none;
   }
   
   .header {
-    background-color: #2f8380;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #646464;
     height: 70px;
-    width: 100%;
-    position: fixed;
+    width: 1000px;
+    margin: auto;
     top: 0;
     left: 0;
   }
   
+  .header span{
+    color: #FF2F88;
+}
+
   .header-logo {
     float: left;
-    font-size: 28px;
+    font-size: 20px;
     padding: 20px 40px;
   }
   
+
   .header-list li {
     float: right;
     padding: 22px 20px;
@@ -33,31 +38,40 @@ body {
   .main {
     display: block;
     margin: 0px;
+    color: #646464;
   }
   
   .copy-container{
-    background-image: url(img/top.png);
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
-    padding: 220px 0px;
+    background-color: #ffffff;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
   }
 
-  .copy-container h1 {
-    font-size: 100px;
-    text-align: center;
+  .title {
+    width: 300px;
+    color: #646464;
+    font-size: 50px;
+    margin: auto;
+    text-align: left;
+    border-bottom: solid 2px #646464;
   }
   
-  .copy-container h2 {
-    font-size: 60px;
-    text-align: center;
+  
+  .title span {
+    color: #FF2F88;
+    font-size: 50px;
   }
   
-  .copy-container span {
-    color: #ff4a4a;
-    font-size: 80px;
+  #title-img{
+    height: 500px;
   }
-  
+
   .contents {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -65,10 +79,10 @@ body {
   }
   
   .section-title {
-    font-size: 28px;
+    font-size: 32px;
     text-align: center;
     padding-bottom: 0px;
-    padding-top: 90px;
+    padding-top: 10px;
     margin-bottom: 0px;
   }
   
@@ -76,7 +90,7 @@ body {
     height: 1px;
     width: 300px;
     margin: 10px auto;
-    background-color: #2f5167;
+    background-color: #646464;
 
   }
 
@@ -89,7 +103,7 @@ body {
   }
 
   .two-column-contents{
-    width: 700px;
+    width: 900px;
     margin: 0 auto;
     padding: 40px 0;
     display: flex;
@@ -99,14 +113,29 @@ body {
     vertical-align: baseline;
   }
 
+  .three-column-contents{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+    vertical-align: baseline;
+  }
+
+  .three-column-contents span{
+    color: #FF2F88;
+  }
+
   .profile-icon{
       width: 33%;
   }
 
   #icon{
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 
   .profile-sentences{
@@ -123,6 +152,7 @@ body {
     table th{
         text-align: left;
         display: table-cell;
+        font-weight: normal;
     }
 
     table td{
@@ -132,62 +162,25 @@ body {
     }
 
 
-
-    }
-
   .works, .skills{
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
 }
 
+#coding, #design, #illustrate{
+    width: 250px;
+    height: 170px;
+}
 
-  .contents-item {
-    text-align: center;
-    margin-right: 40px;
-  }
-  
-  .contents-item p {
+.skills-coding p, .skills-design p, .skills-illustrate p{
     font-size: 24px;
-    margin-top: 30px;
-  }
-  
-  .contact-form {
-    padding-top: 100px;
-  }
-  
-  /* inputとtextareaのCSSを指定してください */
-  input, textarea {
-    width:400px;
-    margin-top:10px;
-    margin-bottom:30px;
-    padding:20px;
-    font-size:18px;
-    border: 1px solid #dee7ec;
-  }
-  
-  /* contact-submitのCSSを指定してください */
-  .contact-submit{
-    background-color:#dee7ec;
-    color:#889eab;
-  }
-  
-  .footer {
-    background-color: #2f5167;
-    color: #fff;
-    height: 300px;
-    width: 100%;
+    font-weight: bold;
+}
 
-  }
-  
-  .footer-logo {
-    text-align: center;
-    font-size: 32px;
-    padding: 20px 40px 10px 40px;
-  }
-  
-  .two-column-footer{
-    width: 700px;
+
+.two-column-contents2{
+    width: 600px;
     margin: 0 auto;
     padding: 40px 0;
     display: flex;
@@ -197,12 +190,67 @@ body {
     vertical-align: baseline;
   }
 
+  .two-column-contents2 span{
+    color: #FF2F88;
+  }
+
+#works-sam{
+    width: 250px;
+}
+
+.three-column-contents2{
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+    vertical-align: baseline;
+    font-size: 12px;
+  }
+
+#contact-img{
+    width: 100pX;
+}
+
+  
+  .footer {
+    background-color: #ffffff;
+    color: #646464;
+    height: 70px;
+    width: 1000px;
+    margin: 30px auto;
+    top: 0;
+    left: 0;
+  }
+  
+  .footer span{
+    color: #FF2F88;
+  }
+
+  .footer-logo {
+    float: right;
+    font-size: 32px;
+    padding: 20px 40px 10px 40px;
+  }
+
+  .footer-list li {
+    float: left;
+    padding: 22px 20px;
+  }
+
 
   a:link{
-      color:#a9ffff;
+      color:#FF2F88;
 
   }
 
+  #no-color-link{
+      text-decoration: none;
+      color: #646464;
+  }
+
   a:visited{
-      color:#ffd3ff;
+      color:#0c38c7;
   }
