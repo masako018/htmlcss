@@ -44,7 +44,7 @@ body {
   
   .copy-container{
     background-color: #ffffff;
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
@@ -58,7 +58,7 @@ body {
     width: 300px;
     color: #646464;
     font-size: 50px;
-    margin: auto;
+    margin-right: 30px;
     text-align: left;
     border-bottom: solid 2px #646464;
   }
