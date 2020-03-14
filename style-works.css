@@ -1,0 +1,138 @@
+body {
+    font-family: 'Noto Serif JP';
+    overflow: auto;
+    background-color: #ffffff;
+    margin: 0px;
+  }
+
+  li {
+    list-style: none;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    color: #646464;
+    height: 70px;
+    width: 1000px;
+    margin: auto;
+    top: 0;
+    left: 0;
+  }
+  
+  .header span{
+    color: #FF2F88;
+}
+
+  .header-logo {
+    float: left;
+    font-size: 20px;
+    padding: 20px 40px;
+    font-weight: normal;
+  }
+  
+
+  .header-list li {
+    float: right;
+    padding: 22px 20px;
+  }
+  
+  .main {
+    width: 900px;
+    display: block;
+    margin: 50px auto;
+    color: #646464;
+  }
+
+  .main span{
+    color: #FF2F88;
+}
+
+  .main-title{
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  .copy-container{
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+  }
+    
+  #works-img{
+    height: 500px;
+  }
+
+  #works-img:hover {
+    filter:alpha(opacity=70);/* IE 6,7*/
+    -ms-filter: "alpha(opacity=70)";/* IE 8,9 */
+    -moz-opacity:0.7;/* FF , Netscape */
+    -khtml-opacity: 0.7;/* Safari 1.x */
+    opacity:0.7;
+    zoom:1;/*IE*/
+  }
+
+  .works-description {
+    width: 400px;
+    color: #646464;
+    font-size: 14px;
+    margin-left: 30px;
+    text-align: left;
+  }
+  
+  .works-description span {
+    color: #FF2F88;
+  }
+
+  .works-title{
+      font-size: 28px;
+      padding-bottom: 18px;
+      border-bottom: solid 1px #646464;
+  }
+  .works-caption{
+      font-size: 16px;
+  }
+
+  .footer {
+    background-color: #ffffff;
+    color: #646464;
+    height: 70px;
+    width: 1000px;
+    margin: 30px auto;
+    top: 0;
+    left: 0;
+  }
+  
+  .footer span{
+    color: #FF2F88;
+  }
+
+  .footer-logo {
+    float: right;
+    font-size: 32px;
+    padding: 20px 40px 10px 40px;
+  }
+
+  .footer-list li {
+    float: left;
+    padding: 22px 20px;
+  }
+
+  a:link{
+      color:#FF2F88;
+
+  }
+
+  #no-color-link{
+      text-decoration: none;
+      color: #646464;
+  }
+
+  a:visited{
+      color:#0c38c7;
+  }
